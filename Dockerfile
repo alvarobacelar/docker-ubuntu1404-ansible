@@ -11,6 +11,7 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y --no-install-recommends \
        python2.7 \
+       unzip \
     && ln -s /usr/bin/python2.7 /usr/bin/python \
     && rm -Rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
